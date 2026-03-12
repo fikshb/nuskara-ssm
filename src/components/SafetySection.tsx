@@ -59,7 +59,7 @@ export default function SafetySection() {
     <section id="safety" className="relative py-16 lg:py-24 bg-neutral-950 overflow-hidden">
       {/* Background texture */}
       <div className="absolute inset-0">
-        <img src="/images/bg-dark-1.webp" alt="" className="absolute inset-0 w-full h-full object-cover opacity-40" />
+        <img src="/images/bg-dark-1.webp" alt="" className="absolute inset-0 w-full h-full object-cover opacity-25" />
       </div>
       {/* Radial overlays */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(180,83,9,0.10),transparent_60%)]" />

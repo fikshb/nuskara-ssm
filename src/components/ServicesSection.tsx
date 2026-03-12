@@ -33,7 +33,7 @@ export default function ServicesSection() {
     <section id="services" className="relative py-16 lg:py-24 bg-neutral-950 overflow-hidden">
       {/* Background texture */}
       <div className="absolute inset-0">
-        <img src="/images/bg-dark-1.webp" alt="" className="absolute inset-0 w-full h-full object-cover opacity-35" />
+        <img src="/images/bg-dark-1.webp" alt="" className="absolute inset-0 w-full h-full object-cover opacity-25" />
       </div>
       {/* Subtle radial glows */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(180,83,9,0.08),transparent_50%)]" />

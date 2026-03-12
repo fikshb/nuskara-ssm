@@ -42,7 +42,7 @@ export default function CoverageSection() {
     <section id="coverage" className="relative py-16 lg:py-24 bg-neutral-950 overflow-hidden">
       {/* Background texture */}
       <div className="absolute inset-0">
-        <img src="/images/bg-dark-1.webp" alt="" className="absolute inset-0 w-full h-full object-cover opacity-35" />
+        <img src="/images/bg-dark-1.webp" alt="" className="absolute inset-0 w-full h-full object-cover opacity-25" />
       </div>
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(180,83,9,0.06),transparent_60%)]" />
 
