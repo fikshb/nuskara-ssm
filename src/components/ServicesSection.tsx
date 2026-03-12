@@ -4,6 +4,12 @@ import { motion } from "framer-motion";
 import { useTranslation } from "@/i18n/LanguageContext";
 import AnimatedSection, { StaggerContainer, StaggerItem } from "./AnimatedSection";
 
+const cardImages = [
+  "/images/card-blasting.webp",
+  "/images/card-drilling.webp",
+  "/images/card-quarry.webp",
+];
+
 const cardIcons = [
   // Blasting - explosion/fire
   <svg key="0" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -25,6 +31,10 @@ export default function ServicesSection() {
 
   return (
     <section id="services" className="relative py-16 lg:py-24 bg-neutral-950 overflow-hidden">
+      {/* Background texture */}
+      <div className="absolute inset-0">
+        <img src="/images/bg-dark-1.webp" alt="" className="absolute inset-0 w-full h-full object-cover opacity-35" />
+      </div>
       {/* Subtle radial glows */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(180,83,9,0.08),transparent_50%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,rgba(245,158,11,0.04),transparent_50%)]" />
@@ -69,11 +79,18 @@ export default function ServicesSection() {
                 whileHover={{ y: -6, transition: { duration: 0.25 } }}
                 className="group relative h-full bg-white/[0.03] border border-white/[0.06] rounded-xl overflow-hidden"
               >
-                {/* Card header with icon */}
-                <div className="relative h-48 bg-neutral-900 overflow-hidden flex items-center justify-center">
-                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(180,83,9,0.15),transparent_70%)]" />
-                  <div className="w-16 h-16 rounded-2xl bg-[#B45309]/20 backdrop-blur-sm border border-[#F59E0B]/20 flex items-center justify-center text-[#F59E0B]">
-                    {cardIcons[i]}
+                {/* Card image */}
+                <div className="relative h-48 bg-neutral-900 overflow-hidden">
+                  <img
+                    src={cardImages[i]}
+                    alt={card.title}
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent" />
+                  <div className="absolute bottom-4 left-5">
+                    <div className="w-10 h-10 rounded-lg bg-[#B45309]/60 backdrop-blur-sm border border-[#F59E0B]/30 flex items-center justify-center text-[#F59E0B]">
+                      {cardIcons[i]}
+                    </div>
                   </div>
                 </div>
 

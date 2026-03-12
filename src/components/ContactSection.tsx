@@ -8,7 +8,10 @@ export default function ContactSection() {
 
   return (
     <section id="contact" className="relative py-16 lg:py-24 bg-neutral-950 overflow-hidden">
-      {/* Subtle radial */}
+      {/* Background texture */}
+      <div className="absolute inset-0">
+        <img src="/images/bg-contact.webp" alt="" className="absolute inset-0 w-full h-full object-cover opacity-35" />
+      </div>
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(180,83,9,0.08),transparent_50%)]" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">

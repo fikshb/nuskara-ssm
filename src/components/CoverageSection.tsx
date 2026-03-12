@@ -40,7 +40,10 @@ export default function CoverageSection() {
 
   return (
     <section id="coverage" className="relative py-16 lg:py-24 bg-neutral-950 overflow-hidden">
-      {/* Subtle radial */}
+      {/* Background texture */}
+      <div className="absolute inset-0">
+        <img src="/images/bg-dark-1.webp" alt="" className="absolute inset-0 w-full h-full object-cover opacity-35" />
+      </div>
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(180,83,9,0.06),transparent_60%)]" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">

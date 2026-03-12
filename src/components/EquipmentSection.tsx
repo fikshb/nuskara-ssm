@@ -34,7 +34,10 @@ export default function EquipmentSection() {
 
   return (
     <section id="equipment" className="relative py-16 lg:py-24 bg-[#FAF7F0] overflow-hidden">
-      {/* Subtle radial glow */}
+      {/* Background texture */}
+      <div className="absolute inset-0">
+        <img src="/images/bg-light-1.webp" alt="" className="absolute inset-0 w-full h-full object-cover opacity-25" />
+      </div>
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(180,83,9,0.03),transparent_70%)]" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
@@ -59,6 +62,19 @@ export default function EquipmentSection() {
             </p>
           </AnimatedSection>
         </div>
+
+        {/* Equipment showcase image */}
+        <AnimatedSection delay={0.25}>
+          <div className="relative rounded-xl overflow-hidden mb-12 h-64 lg:h-80">
+            <img
+              src="/images/equipment-showcase.webp"
+              alt="Equipment showcase"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#FAF7F0] via-[#FAF7F0]/20 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#FAF7F0]/40 via-transparent to-[#FAF7F0]/40" />
+          </div>
+        </AnimatedSection>
 
         {/* Stats bar */}
         <AnimatedSection delay={0.3}>

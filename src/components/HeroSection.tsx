@@ -40,11 +40,17 @@ export default function HeroSection() {
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background - solid dark with subtle amber radial until hero-bg.webp is ready */}
+      {/* Background image */}
       <div className="absolute inset-0 bg-neutral-950">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,rgba(180,83,9,0.15),transparent_60%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(245,158,11,0.08),transparent_50%)]" />
+        <img
+          src="/images/hero-bg.webp"
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover"
+        />
       </div>
+
+      {/* Gradient overlay - dark left for text readability */}
+      <div className="absolute inset-0 bg-gradient-to-r from-neutral-950/90 via-neutral-950/50 to-transparent" />
 
       {/* Top gradient - smooth transition from white navbar */}
       <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-white via-white/40 to-transparent z-[1]" />

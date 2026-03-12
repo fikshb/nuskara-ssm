@@ -49,12 +49,13 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-[72px]">
-        {/* Logo text (placeholder until logo image is provided) */}
-        <a href="#" className="shrink-0 flex items-center gap-2">
-          <div className="w-9 h-9 rounded-lg bg-[#B45309] flex items-center justify-center">
-            <span className="text-white text-sm font-black">SSM</span>
-          </div>
-          <span className="text-sm font-bold text-neutral-800 hidden sm:block">Siliwangi Sumber Makmur</span>
+        {/* Logo */}
+        <a href="#" className="shrink-0">
+          <img
+            src="/images/ssm-logo.webp"
+            alt="Siliwangi Mining Services"
+            className="h-10 w-auto"
+          />
         </a>
 
         {/* Desktop links */}

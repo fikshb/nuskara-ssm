@@ -12,12 +12,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-10">
           {/* Brand column - spans 2 */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-9 h-9 rounded-lg bg-[#B45309] flex items-center justify-center">
-                <span className="text-white text-sm font-black">SSM</span>
-              </div>
-              <span className="text-sm font-bold text-neutral-800">Siliwangi Sumber Makmur</span>
-            </div>
+            <img
+              src="/images/ssm-logo.webp"
+              alt="Siliwangi Mining Services"
+              className="h-10 w-auto mb-4"
+            />
             <p className="text-neutral-500 text-sm leading-relaxed max-w-sm">
               {t.footer.description}
             </p>
